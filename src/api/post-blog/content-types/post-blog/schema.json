@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_blogs",
+  "info": {
+    "singularName": "post-blog",
+    "pluralName": "post-blogs",
+    "displayName": "postBlog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slugID": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "datepost": {
+      "type": "datetime"
+    },
+    "category": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    }
+  }
+}

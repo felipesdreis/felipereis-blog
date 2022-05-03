@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_text_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "chart-pie"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    }
+  }
+}
