@@ -11,3 +11,7 @@ CMS para o site [felipedosreis](felipedosreis.com.br)
 > npm run develop
 
 Necessário rodar como develop para criar novos Content-Type
+
+### Deploy Heroku
+
+> git push heroku master
