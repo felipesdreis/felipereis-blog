@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post-blog",
     "pluralName": "post-blogs",
-    "displayName": "postBlog"
+    "displayName": "postBlog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,20 @@
       "type": "string"
     },
     "slugID": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "datepost": {
       "type": "datetime"
@@ -33,14 +37,14 @@
     "category": {
       "type": "string"
     },
-    "seo": {
-      "displayName": "seo",
-      "type": "component",
-      "repeatable": false,
-      "component": "text.seo"
-    },
     "content": {
       "type": "richtext"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
     }
   }
 }
